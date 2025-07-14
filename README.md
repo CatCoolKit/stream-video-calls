@@ -1,43 +1,43 @@
 # Stream-Video-Calls
 
-Dự án này xây dựng một hệ thống gọi video trực tuyến với tính năng chat, sử dụng React cho FrontEnd và Node.js/Express cho BackEnd, tích hợp Stream API.
+This project builds an online video calling system with chat functionality, using React for the FrontEnd and Node.js/Express for the BackEnd, integrated with the Stream API.
 
-## 📁 Cấu trúc thư mục
+## 📁 Directory Structure
 
 ```
-├── FrontEnd/      # Ứng dụng giao diện người dùng (React + Vite)
+├── FrontEnd/      # User interface application (React + Vite)
 │   ├── src/
-│   │   ├── components/   # Các component React
-│   │   ├── pages/        # Các trang chính
-│   │   ├── store/        # Quản lý trạng thái (zustand)
+│   │   ├── components/   # React components
+│   │   ├── pages/        # Main pages
+│   │   ├── store/        # State management (zustand)
 │   │   ├── hooks/        # Custom hooks
-│   │   ├── lib/, constants/ # Thư viện & hằng số
+│   │   ├── lib/, constants/ # Libraries & constants
 │   │   ├── main.jsx, App.jsx, index.css
 │   ├── public/
 │   ├── package.json
 │   └── ...
 ├── BackEnd/       # API server (Node.js + Express)
 │   ├── src/
-│   │   ├── controllers/  # Xử lý logic
-│   │   ├── routes/       # Định tuyến API
-│   │   ├── models/       # Mô hình dữ liệu (MongoDB)
+│   │   ├── controllers/  # Logic handlers
+│   │   ├── routes/       # API routes
+│   │   ├── models/       # Data models (MongoDB)
 │   │   ├── middleware/   # Middleware
-│   │   ├── lib/          # Thư viện phụ trợ
-│   │   └── server.js     # Điểm khởi động server
+│   │   ├── lib/          # Helper libraries
+│   │   └── server.js     # Server entry point
 │   ├── package.json
 │   └── ...
-├── package.json   # Script tổng hợp build/start
+├── package.json   # Aggregate build/start scripts
 └── ...
 ```
 
-## 🚀 Công nghệ sử dụng
+## 🚀 Technologies Used
 
 - **FrontEnd:** React, Vite, TailwindCSS, Zustand, React Query, Stream Video/Chat SDK, React Router, Lucide, DaisyUI, ESLint
 - **BackEnd:** Node.js, Express, Mongoose (MongoDB), JWT, BcryptJS, CORS, Cookie-Parser, Dotenv, Stream Chat SDK
 
-## ⚙️ Hướng dẫn cài đặt & chạy dự án
+## ⚙️ Installation & Running Guide
 
-### 1. Clone & cài đặt phụ thuộc
+### 1. Clone & Install Dependencies
 
 ```bash
 git clone <repo-url>
@@ -45,24 +45,24 @@ cd Stream-Video-Calls
 npm install
 ```
 
-Lệnh trên sẽ tự động cài đặt dependencies cho cả FrontEnd và BackEnd.
+The above command will automatically install dependencies for both FrontEnd and BackEnd.
 
-### 2. Chạy BackEnd
+### 2. Run BackEnd
 
 ```bash
 npm run start
 ```
 
-Server backend sẽ chạy ở cổng mặc định (xem trong BackEnd/src/server.js).
+The backend server will run on the default port (see BackEnd/src/server.js).
 
-### 3. Chạy FrontEnd (dev)
+### 3. Run FrontEnd (dev)
 
 ```bash
 cd FrontEnd
 npm run dev
 ```
 
-Truy cập http://localhost:5173 (hoặc cổng do Vite chỉ định).
+Access http://localhost:5173 (or the port specified by Vite).
 
 ### 4. Build FrontEnd
 
@@ -71,12 +71,12 @@ cd FrontEnd
 npm run build
 ```
 
-## 📝 Ghi chú
+## 📝 Notes
 
-- Cần cấu hình file `.env` cho BackEnd (xem ví dụ trong BackEnd hoặc tài liệu dự án nếu có).
-- Dự án sử dụng Stream API, cần đăng ký tài khoản và lấy API key.
-- Để phát triển hoặc deploy, hãy đọc kỹ từng package.json của FrontEnd và BackEnd để biết thêm script hữu ích.
+- You need to configure the `.env` file for the BackEnd (see the example in BackEnd or project documentation if available).
+- The project uses the Stream API, so you need to register an account and obtain an API key.
+- For development or deployment, carefully read each package.json in FrontEnd and BackEnd for more useful scripts.
 
 ---
 
-> Liên hệ hoặc đóng góp: [Tên bạn hoặc nhóm phát triển]
+> Contact or contribute: [Your name or development team]
